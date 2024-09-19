@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Salón de Clases</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section id="mainForm">
+      <h3>Salón de Clases</h3>
+      <table id="mainForm_tabla">
+        <tr>
+          <th>Nombre</th>
+          <th>Edad</th>
+          <th>Sexo</th>
+        </tr>
+      </table>
+      <h5>Edad promedio: <span id="mainForm_lblEdadPromedio">?</span></h5>
+      <h5>Nombre del estudiante con mayor edad: <span id="mainForm_lblEstudMayorEdad">?</span> pasajeros</h5>
+      <h5>Porcentaje chicas mayores de edad: <span id="mainForm_lblPorcChicasMayEdad">?</span>%</h5>
+      <button id="mainForm_btAgregar">Agregar estudiante</button>
+    </section>
+
+    <section id="estudForm">
+      <h3>Datos del estudiante</h3>
+      <input type="text" id="estudForm_inNombre" placeholder="Nombre"></input>
+      <input type="text" id="estudForm_inEdad" placeholder="Edad"></input>
+      <input type="text" id="estudForm_inSexo"  placeholder="Sexo"></input>
+      <button id="estudForm_btAceptar">Aceptar</button> 
+    </section>
+  </body>
+  <script type="module">
+    import Cl_controlador from "./js/Cl_controlador.js";
+    new Cl_controlador()
+ </script>
+</html>
